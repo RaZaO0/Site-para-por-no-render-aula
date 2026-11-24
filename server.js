@@ -40,7 +40,7 @@ async function criarBanco() {
 
         await db.execute(`CREATE TABLE IF NOT EXISTS usuario (
             id INT PRIMARY KEY AUTO_INCREMENT,
-            email VARCAHR(70) NOT NULL UNIQUE,
+            email VARCHAR(70) NOT NULL UNIQUE,
             senha VARCHAR(255) NOT NULL
             ) ENGINE = InnoDB`)
 
